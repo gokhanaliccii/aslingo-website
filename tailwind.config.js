@@ -6,6 +6,8 @@ export default {
     extend: {
       colors: {
         cora: "#ff7a4f",
+        cora2: "#dc643c",
+        bgColor: "#fffaf3",
       },
     },
   },
