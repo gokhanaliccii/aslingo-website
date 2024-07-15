@@ -1,3 +1,5 @@
+import heroImage from "../../assets/heroImg.png";
+
 const Hero = () => {
   return (
     <section className="text-gray-600 body-font bg-bgColor">
@@ -35,7 +37,7 @@ const Hero = () => {
           <img
             className="object-cover object-center rounded"
             alt="hero"
-            src="https://dummyimage.com/720x600"
+            src={heroImage}
           />
         </div>
       </div>
