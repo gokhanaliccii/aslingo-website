@@ -1,138 +1,159 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
+import { useRef } from "react";
+
 const Carousel = () => {
+  const swiperRef = useRef();
   return (
-    <>
-      <h1>HELLO </h1>
-      <div
-        id="default-carousel"
-        className="relative w-full"
-        data-carousel="slide"
+    <div className="flex items-center px-40">
+      <Swiper
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+        spaceBetween={30}
+        modules={[Pagination, Navigation]}
       >
-        <div className="relative  bg-black h-56 overflow-hidden rounded-lg md:h-96">
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-1.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
+        {/* 00 */}
+        <SwiperSlide>
+          <div className="grid md:grid-cols-2 grid-cols-1 d: sm:gad-4 gap-1  py-10">
+            <div className="div1">
+              <div className="right-dest">
+                <img
+                  className="  rounded"
+                  alt="hero"
+                  width={500}
+                  src="https://dummyimage.com/720x600"
+                />
+              </div>
+            </div>
+            <div className="lift-dest  flex justify-center flex-col">
+              <h1 className="flex justify-start text-3xl font-samibold py-2">
+                Many desktop publishing packages and editors now as use thier{" "}
+              </h1>
+              <p className="py-1">
+                It is a long established fact that a reader will be distracted
+                by the readable content of page when looking at its layout point
+                of using is that it has more-or-less normal distribution of
+                letters, as opposed to using Content here, content here, making
+                look like readable English.
+              </p>
+              <button className="text-white rounded-full py-1 px-2 bg-cora hover:bg-cora2 w-28">
+                Feature
+              </button>
+            </div>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="grid md:grid-cols-2 grid-cols-1 d: sm:gad-4 gap-1  py-10">
+            <div className="div1">
+              <div className="right-dest">
+                <img
+                  className="  rounded"
+                  alt="hero"
+                  width={500}
+                  src="https://dummyimage.com/720x600"
+                />
+              </div>
+            </div>
+            <div className="lift-dest  flex justify-center flex-col">
+              <h1 className="flex justify-start text-3xl font-samibold py-2">
+                Many desktop publishing packages and editors now as use thier{" "}
+              </h1>
+              <p className="py-1">
+                It is a long established fact that a reader will be distracted
+                by the readable content of page when looking at its layout point
+                of using is that it has more-or-less normal distribution of
+                letters, as opposed to using Content here, content here, making
+                look like readable English.
+              </p>
+              <button className="text-white rounded-full py-1 px-2 bg-cora hover:bg-cora2 w-28">
+                Feature
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="grid md:grid-cols-2 grid-cols-1 d: sm:gad-4 gap-1  py-10">
+            <div className="div1">
+              <div className="right-dest">
+                <img
+                  className="  rounded"
+                  alt="hero"
+                  width={500}
+                  src="https://dummyimage.com/720x600"
+                />
+              </div>
+            </div>
+            <div className="lift-dest  flex justify-center flex-col">
+              <h1 className="flex justify-start text-3xl font-samibold py-2">
+                Many desktop publishing packages and editors now as use thier{" "}
+              </h1>
+              <p className="py-1">
+                It is a long established fact that a reader will be distracted
+                by the readable content of page when looking at its layout point
+                of using is that it has more-or-less normal distribution of
+                letters, as opposed to using Content here, content here, making
+                look like readable English.
+              </p>
+              <button className="text-white rounded py-1 px-2 bg-cora hover:bg-cora2 w-28">
+                Feature
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="grid md:grid-cols-2 grid-cols-1 d: sm:gad-4 gap-1  py-10">
+            <div className="div1">
+              <div className="right-dest">
+                <img
+                  className="  rounded"
+                  alt="hero"
+                  width={500}
+                  src="https://dummyimage.com/720x600"
+                />
+              </div>
+            </div>
+            <div className="lift-dest  flex justify-center flex-col">
+              <h1 className="flex justify-start text-3xl font-samibold py-2">
+                Many desktop publishing packages and editors now as use thier{" "}
+              </h1>
+              <p className="py-1">
+                It is a long established fact that a reader will be distracted
+                by the readable content of page when looking at its layout point
+                of using is that it has more-or-less normal distribution of
+                letters, as opposed to using Content here, content here, making
+                look like readable English.
+              </p>
+              <button className="text-white rounded py-1 px-2 bg-cora hover:bg-cora2 w-28">
+                Feature
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
 
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-2.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-3.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-4.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-5.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
+        <div className="btn  flex sm:justify justify-center">
+          <span
+            className="icon h-4 w-4 bg-cora rounded-full"
+            onClick={() => swiperRef.current.slidePrev()}
+          ></span>
+          <span
+            className="icon h-4 w-4 mx-1 bg-cora rounded-full"
+            onClick={() => swiperRef.current.slideNext()}
+          ></span>
+          <span
+            className="icon h-4 w-4  bg-cora rounded-full"
+            onClick={() => swiperRef.current.slideNext()}
+          ></span>
         </div>
-        <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-          <button
-            type="button"
-            className="w-3 h-3 rounded-full"
-            aria-current="true"
-            aria-label="Slide 1"
-            data-carousel-slide-to="0"
-          ></button>
-          <button
-            type="button"
-            className="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 2"
-            data-carousel-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            className="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 3"
-            data-carousel-slide-to="2"
-          ></button>
-          <button
-            type="button"
-            className="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 4"
-            data-carousel-slide-to="3"
-          ></button>
-          <button
-            type="button"
-            className="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 5"
-            data-carousel-slide-to="4"
-          ></button>
-        </div>
-        <button
-          type="button"
-          className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 1 1 5l4 4"
-              />
-            </svg>
-            <span className="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
-            <span className="sr-only">Next</span>
-          </span>
-        </button>
-      </div>
-    </>
+      </Swiper>
+    </div>
   );
 };
 
