@@ -8,6 +8,7 @@ export default {
         cora: "#ff7a4f",
         cora2: "#dc643c",
         bgColor: "#fffaf3",
+        slateGray:"#2F4F4F"
       },
     },
   },
@@ -21,7 +22,7 @@ export default {
           filter:  'invert(100%) sepia(100%) saturate(10000%) hue-rotate(15deg)',
           mixBlendMode: 'multiply',
         },
-        // Add more custom utilities as needed
+
       };
 
       addUtilities(newUtilities, ['responsive', 'hover']);

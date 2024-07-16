@@ -24,7 +24,7 @@ const Header = () => {
   return (
       <header className="text-gray-600 fixed w-full z-10 px-8  bg-bgColor ">
         <div className="container mx-auto flex justify-between  p-5 flex-row items-center">
-          <Link href='/' className="flex title-font font-medium items-center text-gray-900 mb-0">
+          <Link to='/' className="flex title-font font-medium items-center text-gray-900 mb-0">
           <img className=' white' src={logo}  alt="aslingo" width={50} />
             <span className=" text-xl">ASLingo</span>
           </Link>

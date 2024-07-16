@@ -1,26 +1,24 @@
-import img from "../../assets/img.png";
+import img from "../../assets/banner-email.png";
 
 const EmailSection = () => {
   return (
-    <div className="bg-bgColor flex justify-center grid md:grid-cols-2  px-2 items-center py-10">
-      <div className=" ">
-        <div>
-          <img className="  rounded" alt="hero" width={500} src={img} />
+    <div className=" bg-cora text-white  flex justify-between flex-col md:flex-row text-center md:text-left gap-5  items-center px-10 p-20">
+        <div className=" flex-1">
+          <img className="  rounded" alt="hero" width={350} src={img} />
         </div>
-      </div>
-      <div className="">
+      <div className=" flex-1">
         <h1 className=" text-3xl font-bold py-2">Its called value</h1>
         <p className="py-3 lg:mr-60 ">
           Lorem ipsum dolor sit amet consectetur, esse dicta quo! Eum
-          exercitationem pariatur
+          exercitationem pariatur Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, consequuntur.
         </p>
-        <div className="border-2 border-cora rounded-md flex justify-between lg:w-[24rem] md:w-[22rem] sm:w-[20rem] w-[18rem]  ">
+        <div className=" mx-auto md:m-0  bg-white rounded-lg flex justify-between lg:w-[24rem] md:w-[22rem] sm:w-[20rem] w-[18rem]  ">
           <input
             type="text"
             placeholder="Your Email"
-            className="border-none px-2"
+            className="border-none rounded-xl  outline-none text-black p-3 w-full"
           />
-          <button className="text-white text-sm rounded py-1 px-1 bg-cora hover:bg-cora2 md:w-28 w-20 ">
+          <button className="text-sm rounded-r-lg py-1 px-1 bg-slateGray text-white w-32  ">
             Subscribe
           </button>
         </div>
