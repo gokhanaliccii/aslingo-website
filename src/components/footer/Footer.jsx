@@ -11,13 +11,13 @@ const Footer = () => {
               <h2 className="title-font font-medium text-white  tracking-widest text-2xl mb-3">
                 ASLingo
               </h2>
-              <p className="text-md text-white flex  items-center md:justify-start justify-center">
+              <p className="text-md text-white flex   items-center md:justify-start justify-center">
                 <span>
                   <MdEmail />
                 </span>
                 <span className="ml-1">aslingo@gmail.com</span>
               </p>
-              <p className="text-md text-white flex  items-center md:justify-start justify-center">
+              <p className="text-md text-white flex  pt-2 items-center md:justify-start justify-center">
                 <span>
                   <IoCall />
                 </span>
