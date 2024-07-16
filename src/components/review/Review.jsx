@@ -1,7 +1,7 @@
 const Review = () => {
   return (
-    <div>
-      <div className="py-5 bg-bgColor ">
+ 
+      <div id="testimonials" className="py-5 border-2 bg-bgColor ">
         <div className="container p-6 mx-auto mb-10 xl:px-0">
           <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
             <div className="lg:col-span-2 xl:col-auto">
@@ -88,7 +88,7 @@ const Review = () => {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 

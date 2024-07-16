@@ -1,20 +1,20 @@
-import heroImage from "../../assets/heroImg.png";
+import heroImage from "../../assets/heropic.png";
 
 const Hero = () => {
   return (
-    <section className="text-gray-600 body-font bg-bgColor">
+    <section id="home" className=" px-10 md:px-10 text-gray-600 body-font bg-bgColor">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-            Discover Sign Language: <br /> Fun, Fast, and Easy Learning
+        <div className="lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left mb-0 mt-10 md:mt-0 items-center text-center">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 max-w-[500px] font-medium text-gray-900">
+            Discover Sign Language Fun, Fast, and Easy Learning
           </h1>
-          <p className="mb-8 leading-relaxed">
-            Immersive Learning Experience Dive into real-life <br />{" "}
-            conversations, personalised learning paths, <br /> and engaging
+          <p className="mb-4 max-w-[500px] leading-relaxed text-gray-500">
+            Immersive Learning Experience Dive into real-life 
+            conversations, personalised learning paths,  and engaging
             flashcards.
           </p>
           <div className="flex justify-center">
-            <button className="bg-white inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+            <a href="https://apps.apple.com/gb/app/learn-sign-language-aslingo/id6477713401" target="_blank" className="bg-cora text-white inline-flex py-3 px-5 rounded-lg items-center  md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-cora2 focus:outline-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -25,15 +25,16 @@ const Hero = () => {
                 <path d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z"></path>
               </svg>
               <span className="ml-4 flex items-start   flex-col leading-none">
-                <span className="text-xs text-gray-600 mb-1">
+                <span className="text-xs text-white mb-1 ">
                   Download on the
                 </span>
                 <span className="title-font font-medium">App Store</span>
               </span>
-            </button>
+            </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+       
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
           <img
             className="object-cover object-center rounded"
             alt="hero"

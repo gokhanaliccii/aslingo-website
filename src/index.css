@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* html {
+  scroll-behavior: smooth;
+} */
 /* 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -74,3 +78,7 @@ button:focus-visible {
 /* *{
   background-color: #dc643c;
 } */
+
+.active{
+   font: bold;
+}

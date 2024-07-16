@@ -11,5 +11,20 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.visible': {
+          display: 'block !important', // Override display to block and use !important
+        },
+        '.image-cora': {
+          filter:  'invert(100%) sepia(100%) saturate(10000%) hue-rotate(15deg)',
+          mixBlendMode: 'multiply',
+        },
+        // Add more custom utilities as needed
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 };
