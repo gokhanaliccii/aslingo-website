@@ -14,8 +14,9 @@ function App() {
       <Hero />
       <Features />
       <Review />
-      <Cta />
+
       <EmailSection />
+      <Cta />
       <Footer />
     </>
   );
