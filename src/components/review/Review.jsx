@@ -1,94 +1,123 @@
 const Review = () => {
   return (
-    <div>
-      <div className="py-5 bg-bgColor ">
-        <div className="container p-6 mx-auto mb-10 xl:px-0">
-          <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-            <div className="lg:col-span-2 xl:col-auto">
-              <div className="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 md:px-14 rounded-2xl md:py-14 ">
-                <p className="text-2xl leading-normal ">
-                  Share a{" "}
-                  <mark className="mx-1 text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 text-indigo-200">
-                    testimonial
-                  </mark>{" "}
-                  that hits some of your benefits from one of your popular
-                  customers.
-                </p>
-                <div className="flex items-center mt-8 space-x-3">
-                  <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-                    <img
-                      alt="Avatar"
-                      src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjIwMTQ5ODEx&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=100&amp;h=100"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-lg font-medium text-gray-200">
-                      Sarah Steiner
-                    </div>
-                    <div className="text-gray-600 ">VP Sales at Google</div>
-                  </div>
-                </div>
-              </div>
+    <section className="bg-white px-4 py-12 md:py-24">
+      <div className="max-w-screen-xl mx-auto">
+        <h2 className="font-black text-black text-center text-3xl leading-none uppercase max-w-2xl mx-auto mb-12">
+          What Listeners Are Saying
+        </h2>
+        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4 relative">
+          <div className="bg-gray-200 rounded-lg p-8 text-center md:w-1/3">
+            <p className="font-bold uppercase">John Doe</p>
+            <p className="text-xl font-light italic text-gray-700">
+              This podcast is amazing! The storytelling and production quality
+              are top-notch. I cant wait for the next episode!
+            </p>
+            <div className="flex items-center justify-center space-x-2 mt-4">
+              <svg
+                className="text-yellow-500 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                stroke="currentColor"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg
+                className="text-yellow-500 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                stroke="currentColor"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg
+                className="text-yellow-500 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                stroke="currentColor"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
             </div>
-            <div className="">
-              <div className="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100  md:px-14 rounded-2xl md:py-14 ">
-                <p className="text-2xl leading-normal ">
-                  Make sure you only pick the{" "}
-                  <mark className="mx-1 text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 ">
-                    right sentence
-                  </mark>{" "}
-                  to keep it short and simple.
-                </p>
-                <div className="flex items-center mt-8 space-x-3">
-                  <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-                    <img
-                      alt="Avatar"
-                      src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;crop=faces&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-lg font-medium text-gray-200">
-                      Dylan Ambrose
-                    </div>
-                    <div className="text-gray-600 ">
-                      Lead marketer at Netflix{" "}
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+
+          <div className="bg-gray-200 rounded-lg p-8 text-center md:w-1/3">
+            <p className="font-bold uppercase">Jane Smith</p>
+            <p className="text-xl font-light italic text-gray-700">
+              This podcast kept me on the edge of my seat. Its a must-listen for
+              true crime enthusiasts!
+            </p>
+            <div className="flex items-center justify-center space-x-2 mt-4">
+              <svg
+                className="text-yellow-500 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                stroke="currentColor"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg
+                className="text-yellow-500 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                stroke="currentColor"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg
+                className="text-yellow-500 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                stroke="currentColor"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
             </div>
-            <div className="">
-              <div className="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100  md:px-14 rounded-2xl md:py-14 ">
-                <p className="text-2xl leading-normal ">
-                  This is an{" "}
-                  <mark className="mx-1 text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 ">
-                    awesome
-                  </mark>{" "}
-                  landing page template Ive seen. I would use this for anything.
-                </p>
-                <div className="flex items-center mt-8 space-x-3">
-                  <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-                    <img
-                      alt="Avatar"
-                      src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;crop=faces&amp;q=80"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-lg font-medium text-gray-200">
-                      Gabrielle Winn
-                    </div>
-                    <div className="text-gray-600 ">Co-founder of Acme Inc</div>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div className="bg-gray-200 rounded-lg p-8 text-center md:w-1/3">
+            <p className="font-bold uppercase">Emily Johnson</p>
+            <p className="text-xl font-light italic text-gray-700">
+              I cant get enough of this podcast! The hosts voice is so soothing,
+              and the stories are gripping. Highly recommend!
+            </p>
+            <div className="flex items-center justify-center space-x-2 mt-4">
+              <svg
+                className="text-yellow-500 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                stroke="currentColor"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg
+                className="text-yellow-500 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                stroke="currentColor"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81 .588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg
+                className="text-yellow-500 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                stroke="currentColor"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81 .588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

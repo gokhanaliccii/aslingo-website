@@ -1,27 +1,26 @@
+import img from "../../assets/img.png";
+
 const EmailSection = () => {
   return (
-    <div className="flex mx-20">
-      <div>
-        <img
-          className="  rounded"
-          alt="hero"
-          width={500}
-          src="https://dummyimage.com/720x600"
-        />
+    <div className="bg-bgColor flex justify-center grid md:grid-cols-2  px-2 items-center py-10">
+      <div className=" ">
+        <div>
+          <img className="  rounded" alt="hero" width={500} src={img} />
+        </div>
       </div>
-      <div className="flex flex-col  mx-40">
-        <h1 className=" text-3xl font-samibold py-2">Its called value</h1>
-        <p className="py-3">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nemo
-          quo! Eum exercitationem pariatur esse dicta minima qui
+      <div className="">
+        <h1 className=" text-3xl font-bold py-2">Its called value</h1>
+        <p className="py-3 lg:mr-60 ">
+          Lorem ipsum dolor sit amet consectetur, esse dicta quo! Eum
+          exercitationem pariatur
         </p>
-        <div className="border-2 rounded flex w-60 ">
+        <div className="border-2 border-cora rounded-md flex justify-between lg:w-[24rem] md:w-[22rem] sm:w-[20rem] w-[18rem]  ">
           <input
             type="text"
             placeholder="Your Email"
             className="border-none px-2"
           />
-          <button className="text-white rounded py-1 px-2 bg-cora hover:bg-cora2 w-28">
+          <button className="text-white text-sm rounded py-1 px-1 bg-cora hover:bg-cora2 md:w-28 w-20 ">
             Subscribe
           </button>
         </div>
