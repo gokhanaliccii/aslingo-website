@@ -92,7 +92,7 @@ const Header = () => {
           </Link>        
           </nav>
           </div>
-          <a href='https://apps.apple.com/gb/app/learn-sign-language-aslingo/id6477713401' target='_blank' className={` ${isScrolled?"bg-slateGray":"bg-cora"} inline-flex text-white items-center  border-0 py-1 px-3 focus:outline-none hover:bg-cora2 rounded text-base mt-0`}>
+          <a href='https://apps.apple.com/gb/app/learn-sign-language-aslingo/id6477713401' target='_blank' className={` ${isScrolled?"bg-slateGray hover:bg-gray-500":"bg-cora"} inline-flex text-white items-center  border-0 py-1 px-3 focus:outline-none hover:bg-cora2 rounded text-base mt-0`}>
             Get the App
           </a>
         </div>

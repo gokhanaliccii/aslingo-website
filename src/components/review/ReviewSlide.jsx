@@ -2,9 +2,9 @@ import React from 'react'
 
 const ReviewSlide = () => {
   return (
-  
+    
     <div
-        className="group swiper-slide bg-white border border-solid border-gray-300 flex justify-between flex-col rounded-xl p-6 transition-all duration-500  w-[80%] md:w-full mx-auto  hover:border-cora hover:shadow-sm ">
+        className="group review-slide swiper-slide  bg-white border border-solid border-gray-300 flex justify-between flex-col rounded-xl p-6 transition-all duration-500  w-[80%] md:w-full mx-auto  hover:border-cora hover:shadow-sm ">
         <div className="">
             <div className="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500  ">
                 <svg className="w-5 h-5" viewBox="0 0 18 17" fill="none"
@@ -33,6 +33,7 @@ const ReviewSlide = () => {
             </div>
         </div>
     </div>
+
 
   )
 }

@@ -10,6 +10,7 @@ import 'swiper/css';
 import Slide from "../features/Slide";
 
 import "./swiperStyle.css";
+import ReviewSlide from "./ReviewSlide";
 const ReviewSwiper = () => {
     const swiperRef = useRef();
     
@@ -52,7 +53,11 @@ const ReviewSwiper = () => {
 
         modules={[Pagination, Navigation,Autoplay ]}
       >
-         <SwiperSlide> <div className="swiper-slide">
+        <SwiperSlide><ReviewSlide/></SwiperSlide>
+        <SwiperSlide><ReviewSlide/></SwiperSlide>
+        <SwiperSlide><ReviewSlide/></SwiperSlide>
+        <SwiperSlide><ReviewSlide/></SwiperSlide>
+         {/* <SwiperSlide> <div className="swiper-slide">
                     <div
                         className="group bg-white border border-solid border-gray-300 flex justify-between flex-col rounded-xl p-6 transition-all duration-500  w-full mx-auto  hover:border-cora hover:shadow-sm ">
                         <div className="">
@@ -183,7 +188,7 @@ const ReviewSwiper = () => {
                         </div>
                     </div>
                 </div>
-         </SwiperSlide>
+         </SwiperSlide> */}
      </Swiper>
 
       

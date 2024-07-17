@@ -22,6 +22,7 @@
 .custom-swiper .swiper-pagination-bullet-active {
     background: var(--cora) !important;
 }
+@media screen and (min-width: 780px){
 
 .custom-swiper .swiper-slide.swiper-slide-active {
     transform: scale(1.08);
@@ -29,7 +30,7 @@
     border-radius: 13px;
     border-color:var(--cora);
 }
-
+}
 .custom-swiper .swiper-slide.swiper-slide-active {
     ---tw-text-opacity: 1;
     color: rgb(31 41 55 / var(--tw-text-opacity));
