@@ -9,10 +9,13 @@ import "swiper/css/navigation";
 // Import Swiper styles
 import 'swiper/css';
 import Slide from './Slide';
+import AnimatedElement from "../utils/AnimatedElement";
 
 export default () => {
   const swiperRef = useRef();
   return (
+    <AnimatedElement animationClass="animate__zoomIn">
+
     <Swiper
     className=" bg-bgColor text-cora px-10"
       spaceBetween={50}
@@ -33,5 +36,6 @@ export default () => {
       <SwiperSlide><Slide/></SwiperSlide>
       
     </Swiper>
+    </AnimatedElement>
   );
 };

@@ -2,6 +2,8 @@ import { useState ,useEffect } from 'react';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import logo from "../../assets/logo.png"
 import logoWhite from "../../assets/logo-white.png"
+import 'animate.css';
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -35,7 +37,7 @@ const Header = () => {
 
 
   return (
-      <header className={`${isScrolled?"bg-cora text-white":"bg-bgColor *:text-gray-600"}  md:fixed w-full z-10 px-8  `}>
+      <header className={`${isScrolled?"bg-cora text-white":"bg-bgColor *:text-gray-600"}  md:fixed w-full z-10 px-8 animate__animated animate__slideInDown  `}>
         <div className="container mx-auto flex justify-between  p-5 py-2 flex-row items-center">
           <Link to='/' className="flex title-font font-medium items-center text-gray-900 mb-0">
           <img className=' white' src={`${isScrolled?logoWhite:logo}`}  alt="aslingo" width={50} />
@@ -92,7 +94,7 @@ const Header = () => {
           </Link>        
           </nav>
           </div>
-          <a href='https://apps.apple.com/gb/app/learn-sign-language-aslingo/id6477713401' target='_blank' className={` ${isScrolled?"bg-slateGray":"bg-cora"} inline-flex text-white items-center  border-0 py-1 px-3 focus:outline-none hover:bg-cora2 rounded text-base mt-0`}>
+          <a href='https://apps.apple.com/gb/app/learn-sign-language-aslingo/id6477713401' target='_blank' className={` ${isScrolled?"bg-slateGray hover:bg-gray-500":"bg-cora"} inline-flex text-white items-center  border-0 py-1 px-3 focus:outline-none hover:bg-cora2 rounded text-base mt-0`}>
             Get the App
           </a>
         </div>
