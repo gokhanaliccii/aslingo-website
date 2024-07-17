@@ -1,5 +1,6 @@
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
+import EmailForm from "../utils/EmailForm";
 
 const Footer = () => {
   return (
@@ -70,7 +71,7 @@ const Footer = () => {
               <p className=" text-md py-3 md:text-left text-center">
                 Stay Up To date
               </p>
-              <div className=" bg-bgColor  rounded">
+              {/* <div className=" bg-bgColor  rounded">
                 <div className="flex  justify-center items-center">
                   <input
                     type="text"
@@ -81,7 +82,8 @@ const Footer = () => {
                     Subscribe
                   </button>
                 </div>
-              </div>
+              </div> */}
+              <EmailForm/>
             </div>
           </div>
         </div>
