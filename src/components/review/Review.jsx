@@ -2,7 +2,8 @@ import React from 'react'
 
 const Review = () => {
   return (
-    <div>Review</div>
+  <div>revei</div>
+
   )
 }
 

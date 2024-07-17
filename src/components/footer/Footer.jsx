@@ -5,8 +5,8 @@ import EmailForm from "../utils/EmailForm";
 const Footer = () => {
   return (
 
-      <footer className=" pt-16 text-white  bg-cora body-font">
-        <div className="container px-5  mx-auto">
+      <footer className=" pt-16 text-white   bg-cora body-font">
+        <div className="container p-5  mx-auto">
           <div className="flex flex-wrap md:text-left text-center order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium   tracking-widest text-2xl mb-3">
@@ -65,24 +65,12 @@ const Footer = () => {
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium tracking-widest text-lg mb-3">
+              <h2 className="title-font font-medium tracking-widest text-lg ">
                 Newsletter
               </h2>
               <p className=" text-md py-3 md:text-left text-center">
                 Stay Up To date
-              </p>
-              {/* <div className=" bg-bgColor  rounded">
-                <div className="flex  justify-center items-center">
-                  <input
-                    type="text"
-                    className="border-none py-5 w-40  px-2 rounded focus:outline-none   "
-                    placeholder="Your Email"
-                  />
-                  <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex  bg-cora hover:bg-cora2 border-0 py-2  px-4 focus:outline-none rounded">
-                    Subscribe
-                  </button>
-                </div>
-              </div> */}
+              </p>             
               <EmailForm/>
             </div>
           </div>

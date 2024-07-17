@@ -1,4 +1,3 @@
-import "./App.css";
 import Cta from "./components/cta/Cta";
 import EmailSection from "./components/emailSection/EmailSection";
 import Carousels from "./components/features/Carousels";
@@ -15,10 +14,7 @@ function App() {
       <Header />
       <Hero />
       <Features />
-      <Carousels/>
-      {/* <Review /> */}
       <ReviewSwiper/>
-
       <EmailSection />
       <Cta />
       <Footer />

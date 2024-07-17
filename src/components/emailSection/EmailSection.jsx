@@ -3,7 +3,7 @@ import EmailForm from "../utils/EmailForm";
 
 const EmailSection = () => {
   return (
-    <div className=" bg-cora text-white  flex justify-between flex-col md:flex-row text-center md:text-left gap-5  items-center p-10">
+    <div id="stayInTouch" className=" bg-cora text-white  flex justify-between flex-col md:flex-row text-center md:text-left gap-5  items-center p-10">
         <div className=" flex-1">
           <img className="  rounded" alt="hero" width={350} src={img} />
         </div>
@@ -13,7 +13,6 @@ const EmailSection = () => {
           Lorem ipsum dolor sit amet consectetur, esse dicta quo! Eum
           exercitationem pariatur Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, consequuntur.
         </p>
-        {/* here  */}
         <EmailForm/>
       </div>
     </div>

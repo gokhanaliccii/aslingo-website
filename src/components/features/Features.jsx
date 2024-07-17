@@ -7,8 +7,8 @@ import { GoGoal } from "react-icons/go";
 import Slide from "./Slide";
 const Features = () => {
   return (
-    
-    <section id="features" className=" bg-bgColor px-10">
+    <section id="features">
+    <div  className=" pt-16 bg-bgColor px-10">
       <div className="flex items-center justify-center">
         <div className=" relative">
 
@@ -67,7 +67,9 @@ const Features = () => {
               </div>
             </div>
     </div>
-        </section>
+        </div>
+    <Carousels/>
+    </section>
 
 
  

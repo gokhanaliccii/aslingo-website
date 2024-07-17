@@ -3,7 +3,7 @@ import DownloadButton from "../utils/DownloadButton";
 const Cta = () => {
   return (
   
-      <div  id="stayInTouch"  className="bg-bgColor flex justify-between flex-col md:flex-row p-10 md:px-20  items-center ">
+      <div  className="bg-bgColor flex justify-between flex-col md:flex-row p-10 md:px-20  items-center ">
           <div className=" flex flex-col items-baseline">
             <h1 className=" text-3xl font-bold py-2">
               Ready to get started
