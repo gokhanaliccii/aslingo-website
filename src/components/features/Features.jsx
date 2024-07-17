@@ -5,10 +5,14 @@ import { GiTeacher } from "react-icons/gi";
 import { GoGoal } from "react-icons/go";
 
 import Slide from "./Slide";
+import AnimatedElement from "../utils/AnimatedElement";
 const Features = () => {
   return (
     <section id="features">
-    <div  className=" pt-16 bg-bgColor px-10">
+    <div  className="  bg-bgColor px-10">
+      <AnimatedElement animationClass="animate__bounceInUp" >
+
+      
       <div className="flex items-center justify-center">
         <div className=" relative">
 
@@ -22,7 +26,9 @@ const Features = () => {
       <h1 className="text-center text-3xl font-bold py-12 text-cora">
         Impressive Feature
       </h1>
-     
+      </AnimatedElement>
+      <AnimatedElement animationClass="animate__bounceInUp">
+  
         <div className=" pt-0 p-10 mx-auto max-w-screen-xl ">
          
             <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
@@ -67,6 +73,8 @@ const Features = () => {
               </div>
             </div>
     </div>
+          
+    </AnimatedElement>
         </div>
     <Carousels/>
     </section>

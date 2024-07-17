@@ -1,7 +1,10 @@
 import DownloadButton from "../utils/DownloadButton"
 import heroImg from '../../assets/heropic.png'
+import AnimatedElement from "../utils/AnimatedElement"
 const Slide = () => {
   return (
+
+    
     <div className=" mb-10 px-10 flex justify-center md:justify-start flex-col md:flex-row">
         <div className=" flex justify-center gap-5 items-center md:items-baseline text-center md:text-left flex-col">
             <h2 className=" text-3xl font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
@@ -12,6 +15,7 @@ const Slide = () => {
             <img src={heroImg} alt="" />
         </div>
     </div>
+ 
   )
 }
 
