@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Hero />
       <Features />
-      <ReviewSwiper/>
+      <ReviewSwiper />
       <EmailSection />
       <Cta />
       <Footer />

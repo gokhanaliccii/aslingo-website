@@ -1,6 +1,7 @@
 // lg:w-[24rem] md:w-[22rem] sm:w-[20rem] w-[18rem]
 import { useState } from "react";
-import { app } from "../../firebase";
+import { firebaseApp } from "../../firebase";
+import { LiaSpinnerSolid } from "react-icons/lia";
 import {
   getFirestore,
   collection,
@@ -15,7 +16,8 @@ import { toast } from "react-toastify";
 
 const EmailForm = () => {
   const [email, setEmail] = useState(" ");
-  const db = getFirestore(app);
+  const [isLoading, setIsLoading] = useState(false);
+  const db = getFirestore(firebaseApp);
 
   const checkIfEmailExists = async (email) => {
     const q = query(collection(db, "users"), where("email", "==", email));
@@ -29,6 +31,7 @@ const EmailForm = () => {
   };
 
   const putData = async (email) => {
+    setIsLoading(true);
     const emailExists = await checkIfEmailExists(email);
     const emailValid = await isValidEmail(email);
     if (emailExists) {
@@ -45,21 +48,6 @@ const EmailForm = () => {
     }
   };
 
-  // const putData = async () => {
-  //   if (email === undefined) {
-  //     console.error("Email is undefined");
-  //     return;
-  //   }
-
-  //   try {
-  //     const docRef = doc(collection(db, "users"), email);
-  //     await setDoc(docRef, { email });
-  //     toast.success("Subscribed successfully!");
-  //   } catch (error) {
-  //     toast.error("Error saving data: ", error);
-  //   }
-  // };
-
   const handleInput = (e) => {
     setEmail(e.target.value);
   };
@@ -67,11 +55,14 @@ const EmailForm = () => {
     event.preventDefault();
     if (email) {
       await putData(email);
+      setIsLoading(false);
       setEmail("");
     } else {
       toast.error("Email is required");
     }
   };
+
+  // loading
 
   return (
     <form
@@ -89,9 +80,19 @@ const EmailForm = () => {
       />
       <button
         type="submit"
-        className="text-sm rounded-r-lg py-1 px-1 bg-slateGray text-white w-32  "
+        className={`text-sm rounded-r-lg py-1 px-1 bg-slateGray text-white w-32 ${
+          isLoading
+            ? " cursor-not-allowed pointer-events-none"
+            : "cursor-pointer"
+        }`}
       >
-        Subscribe
+        {isLoading ? (
+          <div className=" border-white flex justify-center ">
+            <LiaSpinnerSolid className=" animate-spin-slow " size={30} />
+          </div>
+        ) : (
+          "Subscribe"
+        )}
       </button>
     </form>
   );

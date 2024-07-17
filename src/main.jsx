@@ -18,9 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       draggable
       pauseOnHover
       theme="light"
-      // transition: Bounce,
     />
-    {/* Same as */}
     <ToastContainer />
     <App />
   </React.StrictMode>
