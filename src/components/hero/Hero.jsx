@@ -1,6 +1,7 @@
 import heroImage from "../../assets/heropic.png";
 import DownloadButton from "../utils/DownloadButton";
-
+import { useInView } from 'react-intersection-observer';
+import 'animate.css';
 const Hero = () => {
   return (
     <section id="home" className=" px-10 md:px-10 text-gray-600 body-font bg-bgColor">
