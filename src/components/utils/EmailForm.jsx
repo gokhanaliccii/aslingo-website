@@ -10,6 +10,7 @@ import {
   query,
   where,
   getDocs,
+  enableLogging,
 } from "firebase/firestore";
 
 import { toast } from "react-toastify";
