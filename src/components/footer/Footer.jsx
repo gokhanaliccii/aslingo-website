@@ -27,13 +27,13 @@ const Footer = () => {
             </p>
             <div className="py-3 flex items-center md:justify-start justify-center">
               <a
-                href="https://www.tiktok.com/@aslingoo"
+                href="https://www.tiktok.com/@aslingoo" target="_blank"
                 className="border-2 mr-2 rounded-full w-10 h-10 cursor-pointer flex items-center justify-center 2 hover:text-black text-white   hover:border-black :border-white "
               >
                 <FaTiktok size={"20px"} />
               </a>
               <a
-                href="https://www.instagram.com/aslingo_app/?igsh=MXR3N2QzOHlobnV3OQ%3D%3D&utm_source=qr"
+                href="https://www.instagram.com/aslingo_app/?igsh=MXR3N2QzOHlobnV3OQ%3D%3D&utm_source=qr" target="_blank"
                 className="border-2 mx-2 rounded-full w-10 h-10 cursor-pointer flex items-center justify-center 2 hover:text-black text-white   hover:border-black :border-white "
               >
                 <FiInstagram size={"20px"} />
@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
 
       <p className="text-center py-5 bg-slateGray text-white">
-        ©2024 ASLingo. All rights reserved.
+        ©2024 <a href="/">ASLingo.</a> All rights reserved.
       </p>
     </footer>
   );
