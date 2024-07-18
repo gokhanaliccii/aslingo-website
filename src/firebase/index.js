@@ -1,7 +1,5 @@
 import { initializeApp } from "firebase/app";
 
-import { enableLogging } from "firebase/firestore";
-
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_REACT_APP_API_KEY,
   authDomain: import.meta.env.VITE_REACT_APP_AUTH_DOMAIN,
@@ -14,5 +12,3 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const firebaseApp = initializeApp(firebaseConfig);
-
-enableLogging(true);
