@@ -23,7 +23,7 @@ const Features = () => {
         </div>
       </div>
 
-      <h1 className="text-center text-3xl font-bold py-12 text-cora">
+      <h1 className="text-center text-3xl font-bold py-12 ">
         Impressive Feature
       </h1>
       </AnimatedElement>
@@ -34,7 +34,7 @@ const Features = () => {
             <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
               <div>
                 <div className="flex justify-center items-center">
-                  <div className="flex justify-center  items-center mb-4 w-10 h-10 rounded lg:h-12 lg:w-12 ">
+                  <div className="flex justify-center  items-center mb-4 w-14 h-14 lg:w-20 lg:h-20 rounded  ">
                   <RiWechatFill color="#ff7a4f" size={80} />                
                   </div>
                 </div>
@@ -47,7 +47,7 @@ const Features = () => {
 
               <div>
                 <div className="flex justify-center items-center">
-                  <div className="flex justify-center   items-center mb-4 w-10 h-10 rounded bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">                
+                  <div className="flex justify-center   items-center mb-4 w-14 h-14 lg:w-20 lg:h-20 rounded bg-primary-100  dark:bg-primary-900">                
                     <GiTeacher color="#ff7a4f"  size={80} />
                   </div>
                 </div>
@@ -58,7 +58,7 @@ const Features = () => {
               </div>
               <div>
                 <div className="flex justify-center items-center">
-                  <div className="flex justify-center  items-center mb-4 w-10 h-10 rounded bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                  <div className="flex justify-center  items-center mb-4 w-14 h-14 lg:w-20 lg:h-20 rounded bg-primary-100 dark:bg-primary-900">
                  
                     <GoGoal color="#ff7a4f"  size={80}  />
                   </div>

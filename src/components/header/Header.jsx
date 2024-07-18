@@ -9,7 +9,7 @@ const Header = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 100) { // Adjust this value as needed
+    if (offset > 0) { // Adjust this value as needed
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -37,11 +37,12 @@ const Header = () => {
 
 
   return (
-      <header className={`${isScrolled?"bg-cora text-white":"bg-bgColor *:text-gray-600"}  md:fixed w-full z-10 px-8 animate__animated animate__slideInDown  `}>
+      <header className={`${isScrolled?" shadow-lg ":"bg-bgColor *:text-gray-600"} bg-bgColor  fixed w-full z-10 px-8 animate__animated animate__slideInDown  `}>
         <div className="container mx-auto flex justify-between  p-5 py-2 flex-row items-center">
           <Link to='/' className="flex title-font font-medium items-center text-gray-900 mb-0">
-          <img className=' white' src={`${isScrolled?logoWhite:logo}`}  alt="aslingo" width={50} />
-            <span className={`${isScrolled?"text-white":"text-gray-600"} text-xl`} >ASLingo</span>
+          <img className=' white' src={logo}  alt="aslingo" width={50} />
+            {/* <span className={`${isScrolled?"text-white":"text-gray-600"} text-xl`} >ASLingo</span> */}
+            <span className="text-xl" >ASLingo</span>
           </Link>
           <div className=' hidden md:visible'>
 
@@ -94,7 +95,7 @@ const Header = () => {
           </Link>        
           </nav>
           </div>
-          <a href='https://apps.apple.com/gb/app/learn-sign-language-aslingo/id6477713401' target='_blank' className={` ${isScrolled?"bg-slateGray hover:bg-gray-500":"bg-cora"} inline-flex text-white items-center  border-0 py-1 px-3 focus:outline-none hover:bg-cora2 rounded text-base mt-0`}>
+          <a href='https://apps.apple.com/gb/app/learn-sign-language-aslingo/id6477713401' target='_blank' className="bg-cora inline-flex text-white items-center  border-0 py-1 px-3 focus:outline-none hover:bg-cora2 rounded text-base mt-0">
             Get the App
           </a>
         </div>
