@@ -16,7 +16,10 @@ export default {
     function ({ addUtilities }) {
       const newUtilities = {
         '.visible': {
-          display: 'block !important', // Override display to block and use !important
+          display: 'block !important', 
+        },
+        '.visible-flex':{
+          display:'flex !important'
         },
         '.image-cora': {
           filter:  'invert(100%) sepia(100%) saturate(10000%) hue-rotate(15deg)',
