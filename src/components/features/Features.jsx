@@ -19,7 +19,7 @@ const Features = () => {
         <div className=" text-cora text-center rounded py-1 px-2 border-cora border-2 w-28">
           Feature
         </div>
-        <img width={70} src={scribble} className=" absolute top-[-15px] right-[-80px]  image-cora" alt="" />
+        <img width={70} src={scribble} className=" absolute top-[-15px] right-[-80px]  " alt="scribble" />
         </div>
       </div>
 

@@ -5,7 +5,7 @@ const ReviewSlide = () => {
     <div className="group review-slide swiper-slide  bg-white border border-solid border-gray-300 flex justify-between flex-col rounded-xl p-6 transition-all duration-500  w-[80%] md:w-full mx-auto  hover:border-cora hover:shadow-sm ">
       <div className="">
 
-        <div className="flex justify-between md:items-center flex-col gap-2 items-start md:flex-row mb-3">
+        <div className="flex justify-between md:items-center flex-col-reverse gap-2 items-start md:flex-row mb-3">
           <h3 className="text-md font-bold">A new favorite </h3>
           <div className="flex items-center  ml-[-5px] md:ml-0">
             <svg
