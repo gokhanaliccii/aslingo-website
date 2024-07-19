@@ -8,8 +8,8 @@ import Slide from "./Slide";
 import AnimatedElement from "../utils/AnimatedElement";
 const Features = () => {
   return (
-    <section id="features">
-    <div  className="  bg-bgColor px-10">
+    <section id="features" className=" bg-bgColor pb-6">
+    <div  className=" bg-bgColor px-10  ">
       <AnimatedElement animationClass="animate__bounceInUp" >
 
       

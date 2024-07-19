@@ -16,7 +16,8 @@
 .custom-swiper .swiper-wrapper {
     height: max-content !important;
     width: max-content !important;
-    padding-bottom: 64px;
+    /* padding-bottom: 64px; */
+    padding-bottom: 50px;
 }
 
 .custom-swiper .swiper-pagination-bullet-active {

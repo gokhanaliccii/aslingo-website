@@ -5,9 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// Import Swiper styles
 import 'swiper/css';
-import Slide from "../features/Slide";
 
 import "./swiperStyle.css";
 import ReviewSlide from "./ReviewSlide";
@@ -20,13 +18,13 @@ const ReviewSwiper = () => {
     
     <AnimatedElement animationClass="animate__zoomIn">
 
-    <section id="testimonials" className=" mx-auto max-w-7xl p-10 sm:px-6 lg:px-16 ">
+    <section id="testimonials" className=" mx-auto max-w-7xl p-10  sm:px-6 lg:px-16 ">
         <div className="mb-5 ">
             <span className="text-sm text-gray-500 font-medium text-center block mb-2">TESTIMONIAL</span>
             <h2 className="text-4xl text-center font-bold text-gray-900 ">What our happy user says!</h2>
         </div>
         <Swiper
-      className=" py-10 custom-swiper  text-cora "
+      className=" pt-6 custom-swiper  text-cora "
         spaceBetween={32}
         slidesPerView={1}
         autoplay

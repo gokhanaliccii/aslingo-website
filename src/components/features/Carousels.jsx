@@ -17,7 +17,7 @@ export default () => {
     <AnimatedElement animationClass="animate__zoomIn">
 
     <Swiper
-    className=" bg-bgColor text-cora px-10"
+    className=" bg-bgColor  text-cora px-10"
       spaceBetween={50}
       slidesPerView={1}
       autoplay

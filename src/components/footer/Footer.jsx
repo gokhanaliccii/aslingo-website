@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="pt-5    bg-cora body-font">
       <div className="container p-5 mx-auto">
-        <div className="flex gap-5 md:gap-0 flex-wrap md:text-left text-center justify-center">
+        <div className="flex gap-5 md:gap-0 flex-wrap md:text-left text-center md:justify-around">
           <div className="lg:w-1/4 md:w-1/2 w-full   px-4">
             <h2 className="title-font font-medium text-slateGray  tracking-widest text-2xl mb-3">
               ASLingo
