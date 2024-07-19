@@ -21,6 +21,12 @@ export default {
         '.visible-flex':{
           display:'flex !important'
         },
+        '.hiddenImp':{
+          display:'none !important'
+        },
+        "visibleUnimp": {
+          display: 'block ', 
+        },
         '.image-cora': {
           filter:  'invert(100%) sepia(100%) saturate(10000%) hue-rotate(15deg)',
           mixBlendMode: 'multiply',

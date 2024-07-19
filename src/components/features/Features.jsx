@@ -13,7 +13,7 @@ const Features = () => {
       <AnimatedElement animationClass="animate__bounceInUp" >
 
       
-      <div className="flex items-center justify-center">
+      {/* <div className="flex items-center justify-center">
         <div className=" relative">
 
         <div className=" text-cora text-center rounded py-1 px-2 border-cora border-2 w-28">
@@ -21,9 +21,9 @@ const Features = () => {
         </div>
         <img width={70} src={scribble} className=" absolute top-[-15px] right-[-80px]  " alt="scribble" />
         </div>
-      </div>
+      </div> */}
 
-      <h1 className="text-center text-3xl font-bold py-12 ">
+      <h1 className="text-center text-3xl font-bold pt-0 md:pt-5 py-12 ">
         Impressive Feature
       </h1>
       </AnimatedElement>

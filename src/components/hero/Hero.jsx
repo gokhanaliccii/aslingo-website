@@ -11,7 +11,7 @@ const Hero = () => {
             Discover Sign Language Fun, Fast, and Easy Learning
           </h1>
         
-          <p className="mb-4 max-w-[500px] text-sm leading-relaxed text-gray-500">
+          <p className="mb-4 max-w-[500px] text-lg  leading-relaxed text-gray-500">
             Immersive Learning Experience Dive into real-life 
             conversations, personalised learning paths,  and engaging
             flashcards.
