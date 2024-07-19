@@ -13,7 +13,7 @@ const Slide = () => {
            <DownloadButton playstore={true}/>
           </div>
         </div>
-        <div>
+        <div className=" w-full">
             <img src={heroImg} alt="img" />
         </div>
     </div>
