@@ -14,7 +14,7 @@ const Slide = () => {
           </div>
         </div>
         <div className=" w-full">
-            <img src={heroImg} alt="img" />
+            <img src={heroImg}  className=" pt-10" alt="img" />
         </div>
     </div>
   )

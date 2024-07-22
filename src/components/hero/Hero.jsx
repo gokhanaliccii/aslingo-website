@@ -23,9 +23,9 @@ const Hero = () => {
             
         </div>
        
-        <div className="lg:max-w-lg pt-5 md:pt-0 lg:w-full md:w-1/2 w-5/6 animate__animated animate__bounceInDown ">
+        <div className="lg:max-w-lg  md:pt-0 lg:w-full md:w-1/2 w-5/6 animate__animated animate__bounceInDown ">
           <img
-            className="object-cover object-center rounded"
+            className="object-cover pt-10 object-center rounded"
             alt="hero"
             src={heroImage}
           />
